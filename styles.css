@@ -3,6 +3,36 @@
     margin: 0;
     border: 0;
 }
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
 body{
-    background-color: #750ed5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.purple-box-div{
+    border-radius: 5%;
+    height: 500px;
+    width: 900px;
+    background: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
 }
