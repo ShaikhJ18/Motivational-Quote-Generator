@@ -4,9 +4,53 @@
     border: 0;
 }
 h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  #647DEE;
+    font-family: 'Lilita One', cursive;
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+}
+.quote,h3{
+    background:linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+	background-size: 300%;
+	font-family: 'Lilita One', cursive;
+	font-weight: 30;
+	font-size: 3em;
+	letter-spacing: 2px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+
+}
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+.Generate{
+    font-size: 40px;
+    font-family: 'Lilita One', cursive;
+    margin-top: 80px;
+    height: 50px;
+    width: 300px;
+    color: black;
+    background: 	#BF40BF;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #BF40BF;
+}
+.Generate:hover{
+    background: #647DEE;
+    color: whitesmoke;
+    border: 2px solid #647DEE;
+    transform: scale(1.2);
+}
+.Generate:active{
+    background: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+    border: 2px solid  linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+    transition: 1s;
 }
 body{
     display: flex;
@@ -32,7 +76,34 @@ body{
 }
 .purple-box-div{
     border-radius: 5%;
-    height: 500px;
+    height: 900px;
     width: 900px;
-    background: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    background: #6f00ff96;
+    box-shadow:  0 0 50px 5px  orange;
+}
+.light-purple-box-div{
+    margin-top: 100px;
+}
+footer{
+    margin-top: 100px;
+    font-family: 'Lilita One', cursive;
+    color: #647DEE;
+    font-size: 20px;
+}
+@media only screen and (max-width:600px){
+    .Generate{
+        font-size: 20px;
+
+    }
+    .quote,h3{
+        font-size: 20px;
+    }
+    .purple-box-div{
+        height: 300px;
+        width: 300px;
+    }
+    .light-purple-box-div{
+        margin-top: 50px;
+    }
+    
 }
