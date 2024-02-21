@@ -7,7 +7,7 @@ h1{
     color:  #647DEE;
     font-family: 'Lilita One', cursive;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     letter-spacing: 4px;
 }
 .quote,h3{
@@ -41,16 +41,21 @@ h1{
     transition: 0.5s;
     border: 2px solid #BF40BF;
 }
+.Number-Of-Quotes-generated{
+    margin-bottom: 30px;
+}
 .Generate:hover{
     background: #647DEE;
     color: whitesmoke;
     border: 2px solid #647DEE;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .Generate:active{
-    background: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
-    border: 2px solid  linear-gradient(315deg, #76daff 0%, #fcd000 74%);
-    transition: 1s;
+    background: #BF40BF;
+    transition: 0.3s;
+    color: black;
+    border: #BF40BF;
+
 }
 body{
     display: flex;
@@ -82,7 +87,7 @@ body{
     box-shadow:  0 0 50px 5px  orange;
 }
 .light-purple-box-div{
-    margin: 100px 100px 100px 100px;
+    margin: 30px 30px 30px 30px;
 }
 footer{
     margin-top: 100px;
